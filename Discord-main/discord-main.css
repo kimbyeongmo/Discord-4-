@@ -1,0 +1,75 @@
+@import url('common.css');
+
+/* main-top style */
+.wrap {
+}
+/* 뒤에 이미지 배치하고 삽입하기 */
+section.main-top {
+  position: relative;
+}
+section.main-top .image-wrap {
+  height: 580px;
+  background-color: #404eed;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+section.main-top .image-wrap .left-image {
+  position: absolute;
+  top: 11%;
+  z-index: 999;
+}
+section.main-top .image-wrap .right-image {
+  position: absolute;
+  top: 8%;
+  left: 68%;
+}
+section.main-top .image-wrap .center-image {
+  position: absolute;
+  left: 30%;
+  top: 72.7%;
+}
+
+/* 메인 타이틀 내부 */
+section.main-top .main-title {
+  /* 중앙 배치 시키기 */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: white;
+}
+
+section.main-top .main-title h1 {
+  font-size: 46px;
+  /* font-family: "Abcgintonord 800", sans-serif; */
+  margin-bottom: 30px;
+  font-family: "Seymour One", sans-serif;
+}
+section.main-top .main-title p {
+  line-height: 1.7;
+}
+section.main-top .main-title span {
+  background: white;
+  color: black;
+  border-radius: 40px;
+  padding: 15px 35px;
+  margin-right: 20px;
+  position: relative;
+  top: 40px;
+  box-shadow: 1px 1px 2px #000;
+}
+section.main-top .main-title span.openbtn {
+  background: #000;
+  color: white;
+}
+section.main-top .main-title a {
+  /* border: 5px solid #000; */
+  /* position: absolute; */
+  /* display: flex; */
+}
+section.main-top .main-title a i {
+/* 아아콘부터 !!!!!! 우째 !!!!!! */
+}
