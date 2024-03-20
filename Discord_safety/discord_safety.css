@@ -19,7 +19,7 @@ header {
   color: #fff;
   font-weight: 700;
   /* 헤더 아래 라인 없는 페이지는 아랫줄 삭제 하세요 */
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   z-index: 9999;
 }
 header .inner-header {
