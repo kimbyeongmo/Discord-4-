@@ -110,6 +110,7 @@ header .inner-header .gnb ul li {
   height: 100px;
   margin: 10px;
   box-shadow: 5px 5px #57F287;
+  text-align: center;
 
   display: flex;
   justify-content: center;
@@ -122,6 +123,7 @@ header .inner-header .gnb ul li {
   margin: 0 auto;
   padding: 95px 0;
   text-align: center;
+  position: relative;
 }
 .safety-video .video-title {
   margin: 20px auto;
@@ -134,7 +136,19 @@ header .inner-header .gnb ul li {
   height: 410px;
   border-radius: 10px;
 }
-
+.safety-video img {
+  display: inline-block;
+}
+.safety-video .star-top {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.safety-video .star-bottom {
+  position: absolute;
+  bottom: 150px;
+  right: 100px;
+}
 
 /* safety-activity style */
 .safety-activity {
