@@ -41,10 +41,11 @@ header .inner-header .gnb {
 header .inner-header .login {
   text-align: right;
   flex: 1;
+  padding: 0 20px;
 }
 header .inner-header .login .login-txt {
   width: 40px;
-  padding: 10px;
+  padding: 10px 20px;
   color: #111;
   background: #fff;
   border-radius: 20px;
@@ -144,7 +145,7 @@ footer .inner-footer .signup .signup-txt {
   color: #fff;
   font-weight: 700;
   width: 40px;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 20px;
 }
 

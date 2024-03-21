@@ -35,7 +35,7 @@ header .inner-header .login {
 }
 header .inner-header .login .login-txt {
   width: 40px;
-  padding: 10px;
+  padding: 10px 20px;
   color: #111;
   background: #fff;
   border-radius: 20px;
@@ -319,15 +319,16 @@ section.third_wrap .graph .bd_purple{
   border: 1.5px solid #b845c1;
   border-radius: 16px;
   position: absolute;
-  width: 20%;
+  width: 25%;
   height: 1430px;
   top: -35px;
-  right: 15px;
+  right: 3px;
+  
 }
 
 section.third_wrap .graph .bd_purple img{
   margin-top: -13px;
-  margin-left: 15px;
+  margin-left: 35px;
 }
 
 section.third_wrap .grap_button{
@@ -453,8 +454,9 @@ section.last_wrap .last_title button{
   border-radius: 28px;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
+  padding: 16px 50px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 section.last_wrap .last_img1{
@@ -535,6 +537,6 @@ footer .inner-footer .signup .signup-txt {
   color: #fff;
   font-weight: 700;
   width: 40px;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 20px;
 }

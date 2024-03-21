@@ -1,12 +1,12 @@
 @import url('common.css');
-
+@import url('Discord_headerfooter/discord_headerfooter.css');
 
 
 /* section.main */
 
 section.main {
   background: #5865f2;
-  height: 80vh;
+  height: 45vh;
   display: flex;
   justify-content: center;
   position: relative;
@@ -22,7 +22,7 @@ section.main .main-box {
   bottom: 0;
 }
 section.main .main-box .main-imgbox {
-  border: 5px solid yellow;
+  /* border: 5px solid yellow; */
   width: 70%;
 }
 section.main .main-box .main-textbox h1 {
