@@ -1,29 +1,194 @@
 @import url('common.css');
-@import url('Discord_headerfooter/discord_headerfooter.css');
+
+
+
+.wrap {
+  position: relative;
+}
+
+
+
+/* header style */
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #fff;
+  font-weight: 700;
+  /* 헤더 아래 라인 없는 페이지는 아랫줄 삭제 하세요 */
+  /* border-bottom: 1px solid #ccc; */
+  z-index: 9999;
+}
+header .inner-header {
+  width: 84%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner-header .logo img {
+  width: 150px;
+}
+header .inner-header h1 {
+  flex: 1;
+}
+header .inner-header .gnb {
+  flex: 8;
+}
+header .inner-header .login {
+  text-align: right;
+  flex: 1;
+}
+header .inner-header .login .login-txt {
+  width: 40px;
+  padding: 10px 20px;
+  color: #111;
+  background: #fff;
+  border-radius: 20px;
+}
+header .inner-header .login:hover .login-txt {
+  color: #5865f2;
+  box-shadow: 1px 1px 5px #123;
+}
+header .inner-header .gnb ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .inner-header .gnb ul li {
+  padding: 20px;
+}
+header .inner-header .gnb ul li a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* footer style */
+
+footer {
+  background: #23272A;
+  color: #fff;
+}
+
+footer .fnb {
+  width: 84%;
+  margin: 0 auto;
+  padding: 50px 0 30px 0;
+  border-bottom: 1px solid #5865f2;
+
+  display: flex; 
+}
+footer .fnb .lan-sns {
+  flex: 2;
+  margin-top: 50px;
+}
+footer .fnb ul {
+  flex: 1;
+  line-height: 2;
+}
+
+
+footer .fnb .lan-sns .lan a {
+  display: flex;  
+}
+footer .fnb .lan-sns .lan a img {
+  height: 20px;
+}
+footer .fnb .lan-sns .lan a span {
+  margin: 0 10px;
+}
+footer .fnb .lan-sns .sns {
+  font-size: 25px;
+  margin-top: 70px;
+}
+footer .fnb .lan-sns .sns a {
+  margin-right: 20px;
+}
+
+
+footer .fnb ul li:first-child {
+  color: #5865f2;
+  margin: 30px auto;
+}
+
+footer .fnb ul li a:hover {
+  text-decoration: underline;
+}
+
+
+footer .inner-footer {
+  width: 84%;
+  margin: 0 auto;
+  padding: 30px 0 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .inner-footer .footer-logo {
+  width: 150px;
+}
+footer .inner-footer .signup .signup-txt {
+  background: #5865f2;
+  color: #fff;
+  font-weight: 700;
+  width: 40px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+footer .inner-footer .signup:hover .signup-txt {
+  background: #8891f2;
+}
+
+
+/* header 이미지 넣기 */
+header img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+/* main-top style */
+div.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
 
 
 /* section.main */
 
 section.main {
   background: #5865f2;
-  height: 45vh;
+  /* border: 5px solid yellow; */
+  width: 100%;
+  height: 732px;
   display: flex;
   justify-content: center;
   position: relative;
+  margin: 0 auto;
+  padding-top: 200px;
 }
 section.main .main-box {
-  /* border: 5px solid yellow; */
+  /* border: 5px solid red; */
   width: 84%;
-  height: 70%;
   display: flex;
   flex-direction: row;
   color: #fff;
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
+}
+section.main .main-box .main-textbox {
+  flex: 5;
 }
 section.main .main-box .main-imgbox {
-  /* border: 5px solid yellow; */
-  width: 70%;
+  /* border: 5px solid blue; */
+  flex: 5;
+  width: 100%;
 }
 section.main .main-box .main-textbox h1 {
   /* border: 5px solid yellow; */
@@ -39,18 +204,12 @@ section.main .main-box .main-textbox p {
   margin-top: 30px;
   line-height: 30px;
 }
-section.main .main-box .main-textbox {
-  flex: 5;
-}
-section.main .main-box .main-imgbox {
-  /* border: 5px solid blue; */
-  flex: 5;
-  width: 100%;
-}
+
 section.main .main-box .main-imgbox img {
   /* border: 5px solid pink; */
   width: 100%;
 }
+
 
 
 /* section.ourstory */
@@ -65,7 +224,6 @@ section.ourstory {
   /* background-color: aqua; */
   display: flex;
   flex-direction: column;
-
 }
 section.ourstory h2 {
   font-family: "Tilt Warp", sans-serif;
@@ -101,7 +259,9 @@ section.ourstory .contents-textbox:nth-child(2) {
 }
 
 
+
 /* section.ourmetrics */
+
 section.ourmetrics ul {
   display: flex;
   /* border: 5px solid salmon; */
@@ -109,10 +269,7 @@ section.ourmetrics ul {
 section.ourmetrics ul .record {
   width: 32%;
   /* border: 5px solid aqua; */
-  margin-right: 2%;
-}
-section.ourmetrics ul .record:last-child {
-  margin-right: 0%;
+  margin: 0 1%;
 }
 section.ourmetrics h2 {
   font-family: "Tilt Warp", sans-serif;
@@ -127,6 +284,8 @@ section.ourmetrics h4 {
   color: #5865f2;
   margin-bottom: 30px;
 }
+
+
 
 /* section.ouroffice */
 
@@ -170,10 +329,6 @@ section.sub-contents .ouroffice .ouroffice-imgbox .img-box:last-child {
 section.sub-contents .ouroffice .ouroffice-imgbox .img-box img {
   width: 100%;
 }
-/*section.sub-contents .ouroffice .ouroffice-imgbox .img-box img:hover {
-  transform: scale(1.2);
-  transition: 1.5s;
-}*/
 .fa-chevron-left {
   color: #fff;
   line-height: 60px
@@ -208,7 +363,6 @@ section.sub-contents .ouroffice .ouroffice-imgbox .img-box .right-iconbox {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 50%;
 }
-
 section.sub-contents .ouroffice .ouroffice-imgbox .img-box .left-iconbox:hover, 
 section.sub-contents .ouroffice .ouroffice-imgbox .img-box .right-iconbox:hover {
   animation: img-slice 1s both;
@@ -223,7 +377,9 @@ section.sub-contents .ouroffice .ouroffice-imgbox .img-box .right-iconbox:hover 
 }
 
 
+
 /* section.openjobs */
+
 section.openjobs {
   background: #23272a;
 }
@@ -264,12 +420,59 @@ section.openjobs .openjobs-textbox .job-button {
 section.openjobs .openjobs-textbox .job-button:hover {
   animation: openjob 0.3s both ;
 }
-
 @keyframes openjob {
   0% {background: #5865f2;}
   100% {
     background: #9aa2fa;
     transform: translate(0, -5%);
+  }
+}
+
+
+
+/* 반응형 웹 디자인 */
+/* 노트북 해상도 1920px 미만 */
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 18px;
+  }
+  header .inner-header .gnb ul {
+    display: flex;
+    /* border: 5px solid yellow; */
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 200px;
+  }
+  section.main {
+    background: #5865f2;
+    /* border: 5px solid yellow; */
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+  section.main .main-box {
+    /* border: 5px solid red; */
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  section.main .main-box .main-textbox h1 {
+    /* border: 5px solid yellow; */
+    margin-top: 90px;
+    margin-right: 20px;
+    font-family: "Seymour One", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.1;
+    text-transform: uppercase;
   }
 }
 
