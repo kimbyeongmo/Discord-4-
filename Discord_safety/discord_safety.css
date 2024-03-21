@@ -173,6 +173,8 @@ header .inner-header .gnb ul li a:hover {
 /* safety-activity style */
 .safety-activity {
   /* background: yellow; */
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 .safety-activity .activity-container {
   width: 68%;
@@ -274,7 +276,9 @@ footer .fnb .lan-sns .sns a {
   margin-right: 20px;
 }
 
-
+footer .fnb ul {
+  margin-left: 20px;
+}
 footer .fnb ul li:first-child {
   color: #5865f2;
   margin: 30px auto;
