@@ -24,6 +24,7 @@ header {
 }
 header .inner-header {
   width: 84%;
+  max-width: 990px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -79,6 +80,7 @@ header .inner-header .gnb ul li a:hover {
   justify-content: space-between;
   align-items: center;
   width: 84%;
+  max-width: 1210px;
   margin: 0 auto;
 }
 .safety-center .safety-introduce .intro-text {
@@ -248,6 +250,7 @@ footer {
 
 footer .fnb {
   width: 84%;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 50px 0 30px 0;
   border-bottom: 1px solid #5865f2;
@@ -296,6 +299,7 @@ footer .fnb ul li a:hover {
 
 footer .inner-footer {
   width: 84%;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 30px 0 70px 0;
   display: flex;
